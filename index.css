@@ -1,0 +1,21 @@
+div {
+    margin: 10px;
+    width: center;
+    padding: 10px;
+} 
+
+h2.header {
+    color: black;
+    text-align: left;
+    margin: 10px;
+    width: center;
+    padding: 10px;
+}
+
+a {
+    color: black;
+    text-align: left;
+    margin: 10px;
+    width: center;
+    padding: 10px;
+}

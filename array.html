@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="array.css">
+        <script type="text/javascript" src="array.js" defer></script>
+        <title>
+            simple input array
+        </title>
+    </head>
+
+    <body>
+        <h2>Simple input array with JS</h2>
+
+            <p>Masukan buah atau Sayur</p>
+            <input type="text" id="txtItem"/>
+            <select name="BuahSayur" id="ListJenisItem">
+                <option value="null">- P I L I H -</option>
+                <option value="buah">Buah - buahan</option>
+                <option value="sayur">Sayur - Sayuran</option>
+            </select>
+            <button id="btnAddItem" onclick="tambahItem(document.getElementById('txtItem').value,document.getElementById('ListJenisItem').value);document.getElementById('txtItem').value = '';">Tambah</button>
+
+            <p>- Jenis Buah -</p>
+            <p>input nama buah :</p>
+            <input type="text" id="txtBuah"/>
+            <button id="btnAddBuah" onclick="tambahBuah(document.getElementById('txtBuah').value);document.getElementById('txtBuah').value = '';">Tambah Buah</button>
+            <p>buah - buahan :</p>
+            <ul>
+                <div id="buah">
+                
+                </div>
+            </ul>
+        
+            <p>- Jenis Sayur -</p>
+            <p>input nama sayur :</p>
+            <input type="text" id="txtSayur"/>
+            <button id="btnAddSayur" onclick="tambahSayur(document.getElementById('txtSayur').value);document.getElementById('txtSayur').value = '';">Tambah Sayur</button>
+            <p>sayur-sayuran :</p>
+            <ol>
+                <div id="sayur">
+
+                </div>
+            </ol>
+            <div>
+                <p>Untuk Save Buah ke txt file</p>
+                <button id="btnSave" onclick="saveBuah()">Save Buah</button>
+            </div>
+            <div>
+                <p>Untuk save Sayur ke txt file</p>
+                <button id="btnSave" onclick="saveSayur()">Save Sayur</button>
+            </div>
+    </body>
+</html>
